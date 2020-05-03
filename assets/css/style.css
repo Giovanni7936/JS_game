@@ -1,3 +1,6 @@
+body{
+background-image: url(https://media.istockphoto.com/photos/soccer-ball-on-green-grass-picture-id185262834?k=6&m=185262834&s=612x612&w=0&h=DR9KsL597xIVIOwli7lv1_gz058JBzqoCAwI7YthZ1Q=);
+}
 .hide {
     display: none;
 }
@@ -10,6 +13,26 @@
 .clear {
     clear: both;
 }
+
 #reset-container, h1 {
     text-align: center;
+}
+.goals{
+    color:black;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: rgb(172, 207, 17);
+}
+
+.reset{
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(17, 17, 17)
+}
+
+#num-resets{
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: whitesmoke;
+
 }

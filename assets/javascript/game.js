@@ -17,6 +17,9 @@ let playerOneGoalCount = 0
 let playerTwoShootCount = 0
 let playerTwoGoalCount = 0
 
+let soundEffect = new Audio('./assets/sound/bell.mp3')
+let cheer = new Audio('./assets/sound/cheer.mp3')
+
 resetButton.addEventListener('click' , function(){
     resetCount += 1  
 
@@ -32,6 +35,8 @@ resetButton.addEventListener('click' , function(){
 
     shotsTaken2.innerHTML = playerTwoShootCount
     goalMade2.innerHTML = playerTwoGoalCount
+    cheer.play()
+    
 })
 
 shootButton1.addEventListener('click' , function(){
@@ -39,6 +44,8 @@ shootButton1.addEventListener('click' , function(){
     playerOneGoalCount += Math.floor(Math.random() + 0.5)
     shotsTaken1.innerHTML = playerOneShootCount
     goalMade1.innerHTML = playerOneGoalCount
+    soundEffect.play()
+
 })
 
 shootButton2.addEventListener('click' , function(){
@@ -46,5 +53,5 @@ shootButton2.addEventListener('click' , function(){
     playerTwoGoalCount += Math.floor(Math.random() + 0.5)
     shotsTaken2.innerHTML = playerTwoShootCount
     goalMade2.innerHTML = playerTwoGoalCount
-
+soundEffect.play()
 })
